@@ -1,0 +1,80 @@
+pruduct:
+    resource: "@PruductBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+
+
+user:
+    resource: "@UserBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+fos_user_register:
+    resource: "@FOSUserBundle/Resources/config/routing/registration.xml"
+    prefix: /register
+
+pruduct_reserver_index:
+    path:     /reserver
+    defaults: { _controller: PruductBundle:Panier:reserver }
+
+
+pruduct_panier:
+    resource: "@PruductBundle/Controller/PanierController.php"
+    type:     annotation
+
+panier:
+    resource: "@PruductBundle/Resources/config/routing.yml"
+    prefix:   /
+
+home:
+    resource: "@PruductBundle/Resources/config/routing.yml"
+    prefix:   /
+
+
+
+user:
+    resource: "@CovUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+
+
+user_default_admin:
+    path:     /admin
+    defaults: { _controller: UserBundle:Default:admin }
+
+
+
+produit_delete:
+    path:     /annuler
+    defaults: { _controller: PruductBundle:Produit:delete }
+
+
+produit_edit:
+    path:     /edit
+    defaults: { _controller: PruductBundle:Produit:edit }
+
+pruduct_acheter_index:
+    path:     /acheter
+    defaults: { _controller: PruductBundle:Panier:vider }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

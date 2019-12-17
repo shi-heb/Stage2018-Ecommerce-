@@ -1,0 +1,10 @@
+ user_default_index:
+     path:     /
+     defaults: { _controller: UserBundle:Default:index }
+
+
+
+user_default_admin:
+    path:     /admin
+    defaults: { _controller: UserBundle:Default:admin }
+

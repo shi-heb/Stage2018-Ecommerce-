@@ -1,0 +1,39 @@
+pruduct_Panier:
+    path:     /reserver
+    defaults: { _controller: PruductBundle:Panier:reserver }
+
+
+list_Panier:
+    path:     /paniers
+    defaults: { _controller: PruductBundle:Panier:index}
+
+annuler_com:
+    path:     /commandeAnnuler
+    defaults: { _controller: PruductBundle:Panier:annuler}
+
+
+home:
+    path:     /
+    defaults: { _controller: PruductBundle:Produit:index2}
+
+produit_delete:
+    path:     /annuler
+    defaults: { _controller: PruductBundle:Produit:delete }
+
+
+produit_new:
+    path:     /newProduct
+    defaults: { _controller: PruductBundle:Produit:new }
+
+
+Produit_showActiona:
+    path:     /details
+    defaults: { _controller: PruductBundle:Produit:show1 }
+
+
+
+
+produit_edit:
+    path:     /edit
+    defaults: { _controller: PruductBundle:Produit:edit }
+
